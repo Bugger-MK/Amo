@@ -1,0 +1,88 @@
+/* styles.css */
+:root{
+  --card_width:250px;
+  --card_border_radius:17px;
+  --row_increment: 10px ;
+  --card_small:26;
+  --card_medium:33;
+  --card_large:45;
+}
+
+
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #d58d8d;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  
+  .container {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill,var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+  }
+  
+  .card {
+   padding: 0;
+   margin: 15px 10px;
+   background-color: red;
+   border-radius: var(--card_border_radius);
+    
+  }
+  
+  .card_small {
+    grid-row: span  var(--card_small );
+  }
+  .card_medium {
+    grid-row: span  var(--card_medium );
+  }
+  .card_large {
+    grid-row: span  var(--card_large );
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--card_border_radius);
+  }
+
+  .card video{
+    width: 100%;
+    height: 100%;
+    border: 3px solid #333;
+    
+  }
+
+ 
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #005bb5;
+}

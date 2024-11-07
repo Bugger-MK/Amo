@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <style>
+        /* Body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Card styling */
+        .card {
+            width: 300px;
+            background-color: #ffecd1;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative confetti */
+        .confetti {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #f39c12;
+            border-radius: 50%;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Randomly place confetti */
+        .confetti:nth-child(2) { top: 10%; left: 15%; background-color: #e74c3c; }
+        .confetti:nth-child(3) { top: 20%; left: 70%; background-color: #8e44ad; }
+        .confetti:nth-child(4) { top: 60%; left: 30%; background-color: #3498db; }
+        .confetti:nth-child(5) { top: 75%; left: 80%; background-color: #2ecc71; }
+
+        /* Floating animation for confetti */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+
+        /* Heading styling */
+        h1 {
+            font-size: 24px;
+            color: #e74c3c;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        /* Message styling */
+        p {
+            font-size: 16px;
+            color: #333;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #d62c1a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Birthday Card -->
+    <div class="card">
+        <!-- Decorative confetti -->
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+
+        <!-- Birthday message -->
+        <h1>Hey Plushie!!</h1>
+        <p>Happy Bee-Day! 🌻 I hope your day is blooming with joy and brimming with sunshine!✨💫 
+            You’re one in a sun-million and deserve a day that’s as bright and cheerful as a sunflower!🥳💛
+             Here’s to another year of growing and shining like the amazing person you are 🐝🦋,
+            remeber to keep facing the sunrise no matter how many sunsets there are(see what i did there
+            😎)</p>
+ 
+        <!-- Button for fun effect or link -->
+        <a href="apology.html" class="button">lets go check out!</a>
+    </div>
+
+</body>
+</html>
